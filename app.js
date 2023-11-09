@@ -19,7 +19,7 @@ app.use(express.json())
 
 //route_initialization
 const booksRouter = require("./routes/books")
-app.use('/books' , booksRouter)
+app.use('/book_management' , booksRouter)
 
 
 //servert port assigning
