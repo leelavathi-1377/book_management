@@ -14,6 +14,7 @@ module.exports.getBookById = async(req, res) =>{
         }
         response.data = books
         response.status = "success"
+        response.message = "Book details fetched succefully!"
         return res.status(200).json(response)
     }catch(err){
         return res.status(500).json(response)

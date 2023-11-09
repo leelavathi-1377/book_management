@@ -15,6 +15,7 @@ db.once('open' , () =>{
     console.log("mongodb database connected successfully")
 })
 
+//Is used to set up middleware that parses incoming JSON data from HTTP request bodies
 app.use(express.json())
 
 //route_initialization
