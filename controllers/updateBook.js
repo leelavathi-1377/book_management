@@ -1,6 +1,8 @@
 const booksModel = require("../models/books")
 const  { getResponseObject } =  require("../helpers/supporter")
 
+
+//update the details of the Book By Id
 module.exports.updateBook = async(req, res) =>{
     const response = getResponseObject()
     const id = req.params.id
